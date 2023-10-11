@@ -37,6 +37,10 @@ android {
 
 dependencies {
 
+    //Library recycler view dan card view
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'androidx.recommendation:recommendation:1.0.0'
+
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
