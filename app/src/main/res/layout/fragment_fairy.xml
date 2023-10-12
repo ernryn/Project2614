@@ -15,4 +15,13 @@
         android:textStyle="bold"
         android:layout_margin="16dp"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBuku"
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="70dp"/>
+
 </FrameLayout>

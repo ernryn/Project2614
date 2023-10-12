@@ -5,55 +5,31 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FableFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FableFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fable, container, false)
-    }
+        val rootView = inflater.inflate(R.layout.fragment_fable, container, false)
+        val rvBuku: RecyclerView = rootView.findViewById(R.id.recyclerViewBuku)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FableFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FableFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        rvBuku.layoutManager = LinearLayoutManager(requireContext())
+
+        val data = ArrayList<BukuModel>()
+        data.add(BukuModel(R.drawable.book8,"33 Binatang Paling Heboh",
+            "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
+        data.add(BukuModel(R.drawable.book10,"Mahkota Indah Sang Jerapah",
+            "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
+        data.add(BukuModel(R.drawable.book13,"Ayam Bijaksana dan Ular yang Berlapang Dada",
+            "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
+
+        val adapter = AdapterHome(data)
+        rvBuku.adapter = adapter
+
+        return rootView
     }
 }

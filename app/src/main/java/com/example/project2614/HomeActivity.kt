@@ -21,9 +21,9 @@ class HomeActivity : AppCompatActivity() {
         val data = ArrayList<BukuModel>()
         data.add(BukuModel(R.drawable.book1,"Emi's Beach Adventure",
                         "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
-        data.add(BukuModel(R.drawable.book2,"Emi's Beach Adventure",
+        data.add(BukuModel(R.drawable.book2,"Ade's Adventure",
             "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
-        data.add(BukuModel(R.drawable.book4,"Emi's Beach Adventure",
+        data.add(BukuModel(R.drawable.book4,"Mermaid to Rescue",
             "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
         //set adapter
         val adapter = AdapterHome(data)

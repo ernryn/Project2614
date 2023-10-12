@@ -25,8 +25,7 @@ class BookKidActivity : AppCompatActivity() {
             replaceFragment(FableFragment())
         }
         //event button fairy
-        btnScience.setOnClickListener{
-            replaceFragment(ScienceFragment())
+        btnScience.setOnClickListener{replaceFragment(ScienceFragmentFragment())
         }
     }
 

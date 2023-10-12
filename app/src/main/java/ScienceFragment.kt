@@ -8,32 +8,27 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class FairyFragment : Fragment() {
-
+class ScienceFragmentFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val rootView = inflater.inflate(R.layout.fragment_fairy, container, false)
+
+        val rootView = inflater.inflate(R.layout.fragment_science, container, false)
         val rvBuku: RecyclerView = rootView.findViewById(R.id.recyclerViewBuku)
 
-        //set layout manager di RecyclerView
         rvBuku.layoutManager = LinearLayoutManager(requireContext())
 
         //list data buku
         val data = ArrayList<BukuModel>()
-        data.add(BukuModel(R.drawable.book8,"My Little Book of Fairy Tales",
+        data.add(BukuModel(R.drawable.book11,"Science World for Kids",
             "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
-        data.add(BukuModel(R.drawable.book9,"The Gingerbread Man",
+        data.add(BukuModel(R.drawable.book12,"Kecil-kecil Jadi Einstein",
             "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
-        data.add(BukuModel(R.drawable.book10,"Puss in Boots",
+        data.add(BukuModel(R.drawable.book13,"Taman Ajaib | Ramuan Obat yang Menyembuhkan",
             "Lorem ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
 
-        //set adapter
         val adapter = AdapterHome(data)
-
-        //set adapter ke recycler view
         rvBuku.adapter = adapter
 
         return rootView
