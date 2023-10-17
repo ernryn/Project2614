@@ -13,6 +13,9 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val btnBookKidActivity: Button = this.findViewById(R.id.buttonMenu1)
+        val btnReadingActivity: Button = this.findViewById(R.id.buttonMenu2)
+        val btnSpaceActivity: Button = this.findViewById(R.id.buttonMenu3)
+        val btnAboutUsActivity: Button = this.findViewById(R.id.buttonMenu4)
         val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBuku)
 
         //set layout manager di RecyclerView
@@ -32,6 +35,18 @@ class HomeActivity : AppCompatActivity() {
 
         btnBookKidActivity.setOnClickListener {
             val intent = Intent(this, BookKidActivity::class.java)
+            startActivity(intent)
+        }
+        btnReadingActivity.setOnClickListener {
+            val intent = Intent(this, ReadingActivity::class.java)
+            startActivity(intent)
+        }
+        btnSpaceActivity.setOnClickListener {
+            val intent = Intent(this, SpaceActivity::class.java)
+            startActivity(intent)
+        }
+        btnAboutUsActivity.setOnClickListener {
+            val intent = Intent(this, AboutUsActivity::class.java)
             startActivity(intent)
         }
     }

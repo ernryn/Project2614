@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="485dp"
+        android:layout_height="1020dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walpaper" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="ABOUT US"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="OFFICAL BOOK FOR KIDS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="321dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="A global platform dedicated to kids and authors around the world."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="EXPLORE, ENJOY, AND CELEBRATE READING"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="239dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uverse" />
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/maps" />
+
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/phone" />
+
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/world" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
