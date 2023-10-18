@@ -14,7 +14,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         val btnBookKidActivity: Button = this.findViewById(R.id.buttonMenu1)
         val btnReadingActivity: Button = this.findViewById(R.id.buttonMenu2)
-        val btnSpaceActivity: Button = this.findViewById(R.id.buttonMenu3)
+        val btnResponsiActivity: Button = this.findViewById(R.id.buttonMenu3)
         val btnAboutUsActivity: Button = this.findViewById(R.id.buttonMenu4)
         val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBuku)
 
@@ -41,8 +41,8 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, ReadingActivity::class.java)
             startActivity(intent)
         }
-        btnSpaceActivity.setOnClickListener {
-            val intent = Intent(this, SpaceActivity::class.java)
+        btnResponsiActivity.setOnClickListener {
+            val intent = Intent(this, ResponsiActivity::class.java)
             startActivity(intent)
         }
         btnAboutUsActivity.setOnClickListener {
